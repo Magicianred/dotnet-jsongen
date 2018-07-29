@@ -1,0 +1,41 @@
+﻿[
+  {
+    "Namespace": "Testing",
+    "Name": "Model1",
+    "Description": "test model 1",
+    "Members": [
+      {
+        "Type": "string",
+        "Name": "member1",
+        "Attributes": [ "[Length(3)]" ],
+        "Description": "test data 1"
+      },
+      {
+        "Type": "string",
+        "Name": "member2",
+        "Attributes": [ "[Require]", "[Length(3)]" ],
+        "Description": "test data 2"
+      }
+    ]
+  },
+
+  {
+    "Namespace": "顧客識別條件/查詢條件",
+    "Name": "Model2",
+    "Description": "test model 2",
+    "Members": [
+      {
+        "Type": "string",
+        "Name": "member1",
+        "Attributes": [ "[Length(3)]" ],
+        "Description": "test data 1"
+      },
+      {
+        "Type": "string",
+        "Name": "member2",
+        "Attributes": [ "[Require]", "[Length(3)]" ],
+        "Description": "test data 2"
+      }
+    ]
+  }
+]

@@ -1,7 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="McMaster.NETCore.Plugins" Version="0.1.0" />
+    <PackageReference Include="McMaster.NETCore.Plugins.Sdk" Version="0.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="$(MicrosoftCodeAnalysisPackageVersion)" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="$(MicrosoftCodeAnalysisPackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="$(AspNetCorePackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts" Version="$(AspNetCorePackageVersion)" />
+
+  </ItemGroup>
 
 </Project>

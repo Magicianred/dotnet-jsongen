@@ -1,0 +1,22 @@
+﻿@using Templates.Tools
+@inherits DynamicTemplateBase
+@{
+    this.Extension = ".cs";
+}
+using System;
+using System.Collections.Generic;
+
+namespace @Model.Namespace
+{
+    public class @Model.Name
+    {
+@foreach(var member in Model.Members)
+{
+        @:/// <summary>
+        @:/// @(((string)member.Description).Replace("\r\n", "\r\n        "))
+        @:/// </summary>
+        @:@string.Join("\r\n        ",member.Attributes)
+        @:public @member.Type @member.Name { get; set; }
+}
+    }
+}

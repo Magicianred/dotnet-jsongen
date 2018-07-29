@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+
+  </PropertyGroup>
+  <ItemGroup Label="Share">
+    <Compile Include="$(MSBuildThisFileDirectory)*.cs" />
+  </ItemGroup>
+</Project>

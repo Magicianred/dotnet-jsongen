@@ -1,0 +1,16 @@
+<Project>
+  
+  <PropertyGroup>
+    <TargetFramework Condition="$(TargetFramework)==''">netstandard</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <LocalFeed>$(SolutionDir).packages</LocalFeed>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <TieredCompilation>true</TieredCompilation>
+    <!--<GenerateDocumentationFile Condition="$(IsPackable)!='true'">true</GenerateDocumentationFile>-->
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <ComplieIntergrationProject>false</ComplieIntergrationProject>
+  </PropertyGroup>
+  
+  <Import Project="build\repo.props" />
+</Project>

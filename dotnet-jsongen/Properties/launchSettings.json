@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotnet-codegen": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\dcvsl\\source\\repos\\RazorTemplate\\dotnet-codegen.Tests\""
+    }
+  }
+}

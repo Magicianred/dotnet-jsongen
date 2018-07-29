@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <PropertyGroup Label="Package Versions">
+    <AspNetCorePackageVersion>2.1.*</AspNetCorePackageVersion>
+    <ESUNPackageVersion>0.9.*</ESUNPackageVersion>
+    <MicrosoftAspNetCoreSignalRVersion>1.0.*</MicrosoftAspNetCoreSignalRVersion>
+    <PollyPackageVersion>6.0.1</PollyPackageVersion>
+    <PollyExtensionsHttpPackageVersion>2.0.1</PollyExtensionsHttpPackageVersion>
+    <PollyCachingIDistributedCache>1.0.4</PollyCachingIDistributedCache>
+    <MicrosoftCodeAnalysisPackageVersion>2.8.*</MicrosoftCodeAnalysisPackageVersion>
+  </PropertyGroup>
+  <Import Project="sources.props" Condition="$(RestoreSources)==''" />
+  <Import Project="$(DotNetPackageVersionPropsPath)" Condition=" '$(DotNetPackageVersionPropsPath)' != '' " />
+</Project>
