@@ -7,7 +7,7 @@ code gen by razor template with json file
 Feed: [https://www.myget.org/F/dcvs-devenv/api/v3/index.json](https://www.myget.org/F/dcvs-devenv/api/v3/index.json)
 
 ```
-dotnet tool install dotnet-jsongen -g --add-source https://www.myget.org/F/dcvs-devenv/api/v3/index.json](https://www.myget.org/F/dcvs-devenv/api/v3/index.json
+dotnet tool install dotnet-jsongen -g --add-source https://www.myget.org/F/dcvs-devenv/api/v3/index.json
 
 dotnet-json <root-path>
 ```
