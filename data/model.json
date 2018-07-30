@@ -20,7 +20,7 @@
   },
 
   {
-    "Namespace": "顧客識別條件/查詢條件",
+    "Namespace": "Testing",
     "Name": "Model2",
     "Description": "test model 2",
     "Members": [
